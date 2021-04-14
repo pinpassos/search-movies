@@ -3,7 +3,7 @@ from functions import function
 
 # Main
 while True:
-    movie_name = str(input('Type a movie name in english: ')).strip()
+    movie_name = str(input('Type a movie name in english: '))
     movie = function.requisition(movie_name)
     if movie['Response'] == 'False':
         print('Error: ' + movie['Error'])
